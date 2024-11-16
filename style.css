@@ -32,6 +32,9 @@ background: linear-gradient(to bottom, #6a11cb, #2575fc, #ff0099);
   grid-template-columns: repeat(2, minmax(0, 1fr));
   padding: 1.25rem /* 20px */;
     }
+    .hobis-parent{
+      margin-top: 34px;
+    }
 }
 
 .left{
@@ -41,16 +44,24 @@ background: linear-gradient(to bottom, #6a11cb, #2575fc, #ff0099);
     padding: 5px;
     color: aliceblue;
 }
-@media (max-width:168px) {
+@media (max-width:768px) {
   .left{
       margin-right: 0px;
+      width: 100%
   }  
   .right{
     margin-left: 0px;
-    
+    width: 90%;
   }
   .container{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hobis-parent{
+    margin-top: 10px;
   }
 }
 
@@ -207,6 +218,11 @@ background: linear-gradient(to bottom, #6a11cb, #2575fc, #ff0099);
 
   .icon-parent{
     margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .hobis-parent{
     display: flex;
     flex-wrap: wrap;
   }
